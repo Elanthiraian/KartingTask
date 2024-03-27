@@ -9,6 +9,7 @@ public class ShopItemUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI priceText;
     [SerializeField] private Image itemImage;
+    [SerializeField] private TextMeshProUGUI loadingText;
     public string itemName;
 
     public void SetItemDetails(string itemName, int itemPrice)
@@ -20,6 +21,7 @@ public class ShopItemUI : MonoBehaviour
     public void SetItemImage(Sprite sprite)
     {
         itemImage.sprite = sprite;
+        loadingText.text = "";
     }
 
 }

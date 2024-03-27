@@ -9,7 +9,6 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 using TMPro;
-using static ShopManager;
 
 public class ThemeManager : MonoBehaviour
 {
@@ -113,7 +112,6 @@ public class ThemeManager : MonoBehaviour
     }
 }
 
-// Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
 
 [System.Serializable]
 public class AllEventConfigdata

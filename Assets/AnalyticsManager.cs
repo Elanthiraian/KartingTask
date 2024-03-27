@@ -64,4 +64,11 @@ public class AnalyticsManager : MonoBehaviour
         // Trigger Firebase Analytics event
         //FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventEcommercePurchase, "item_name", itemName, "item_price", itemPrice.ToString());
     }
+
+    public void TrackShopButtonClick()
+    {
+        // Log event to Firebase Analytics
+        FirebaseAnalytics.LogEvent("Shop_button_Clicked");
+        //FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventSelectContent, new Firebase.Analytics.Parameter(FirebaseAnalytics.ParameterItemName, "Shop_Button_Click"));
+    }
 }

@@ -8,12 +8,6 @@ public class VehicleMovement : MonoBehaviour
     public ArcadeKart ArcadeKart;
     public Vector2 _moveValue;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     public void OnMove(InputAction.CallbackContext inputAction)
     {
         

@@ -16,7 +16,6 @@ public class WalletManager : MonoBehaviour
 
     public void Start()
     {
-        var db = FirebaseFirestore.DefaultInstance;
         OnUpdateWalletData();
     }
 
@@ -25,8 +24,8 @@ public class WalletManager : MonoBehaviour
         if (PlayerPrefs.HasKey("Wallet"))
         {
             Wallet = PlayerPrefs.GetInt("Wallet").ToString();
-            _WalletText.text = $"Coin : \n {Wallet}";
         }
+        _WalletText.text = $"Coin : \n {Wallet}";
         AnalyticsManager.ScoredPoints(int.Parse(Wallet));
     }
 }

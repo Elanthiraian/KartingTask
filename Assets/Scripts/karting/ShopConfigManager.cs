@@ -16,10 +16,13 @@ public class ShopConfigManager : MonoBehaviour
     public List<Item> karts;
     public GameObject itemPrefab;
     public Transform contentParent;
+    public AnalyticsManager AnalyticsManager;
 
     private void Start()
     {
+
         FetchShopData();
+        AnalyticsManager.TrackShopButtonClick();
     }
 
     private void FetchShopData()
